@@ -7,12 +7,9 @@ const rootEl = document.getElementById("root");
 const h = React.createElement;
 
 
-const Thing = styled.div({
-  color: "blue",
-  [`& ${Box}`]: {
-    color: "pink"
-  }
-});
+const Thing = styled.div`color: blue; & ${Box} { color: pink; }`
+
+
 
 function Root() {
   return h(
